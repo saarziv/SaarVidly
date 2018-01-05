@@ -64,6 +64,7 @@ namespace Vidly.Models
 
     public class RegisterViewModel
     {
+       
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -79,6 +80,15 @@ namespace Vidly.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
+
+        [Required]
+        [Display(Name ="Phone")]
+        [StringLength(50,ErrorMessage = "The {0} must be at least {2} characters long.")]
+        public string Phone { get; set; }
     }
 
     public class ResetPasswordViewModel
