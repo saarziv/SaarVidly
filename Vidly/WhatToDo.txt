@@ -1,0 +1,4 @@
+﻿*  im in the middle of the exersice of section 4.
+
+* having trouble with datetime to insert a new movie.
+* maybe its related to date added column !
